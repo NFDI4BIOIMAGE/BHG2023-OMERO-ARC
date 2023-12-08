@@ -15,3 +15,24 @@ Please also adhere here to the [ELIXIR Germany Code of Conduct](https://www.denb
 - currently selected: Visual Studio
 - Prep_stage/
   - You can create this directroy inside your cloned BHG2023-OMERO-ARC repo and use it when you want to prepare files or place data in this repo locally but do not want to push these to this repo.
+ 
+## Contributions
+
+**Notes on contributions during the Hackathon are [here](CONTRIBUTING.md).**
+
+ <br />
+
+🙌 Thank you for any contribution to the **BHG2023-OMERO-ARC** repository!!!  
+
+When contributing, please consider that (parts of) this repository might be used by people with various background and intentions including teaching in the future. Therefore, it is appreciated if you can provide ***a brief non-specialist targeted introduction / summary*** preceding your content and work on Hackathon tasks.  
+
+
+## Contributors
+🤝 Participants contributing to the **BHG2023-OMERO-ARC project** can provide their name, GitHub handle, ORCID iD and ROR here - if you like.  
+
+Suggestion: alphabetical order (surname):  
+
+|name|GitHub|ORCID|ROR|  
+|---|---|---|---|  
+|Niraj Kandpal|[@Nirkan](https://github.com/Nirkan)|https://orcid.org/0009-0007-5101-4786|[https://ror.org/00rcxh774](https://ror.org/00rcxh774) <br>[https://ror.org/04c4bwh63](https://ror.org/04c4bwh63)|
+|Andrea Schrader|[@andreaschrader](https://github.com/andreaschrader)|https://orcid.org/0000-0002-3879-7057|https://ror.org/034waa237<br><br>https://ror.org/00rcxh774| 
