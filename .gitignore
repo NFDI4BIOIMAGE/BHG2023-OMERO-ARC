@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# macOS
+.DS_Store
+
+# Others
+Prep_stage/
