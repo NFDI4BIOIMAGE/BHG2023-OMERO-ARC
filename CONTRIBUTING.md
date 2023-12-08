@@ -1,6 +1,6 @@
 # Contributing
 
-Optimal repository contributions during the Hackathon need to be decided on.
+Repository contributions during the Hackathon only by participants and guests.
 
 Suggestion:
 - Protect the main branch.  
