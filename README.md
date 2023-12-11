@@ -7,6 +7,9 @@ Repository for documentation during the **[2nd de.NBI BioHackathon Germany](http
 ## Code of Conduct
 Please also adhere here to the [ELIXIR Germany Code of Conduct](https://www.denbi.de/code-of-conduct). 
 
+## Task_Groups
+Initially prepared and suggested based on defined task of participants.
+
 ## Branch protection
 - The main branch is protected. For merging a branch into main you need a PR with at least one approving review.
 - @andreaschrader only initially bypasses this in order to set up the repository for the participants for the Hackathon.
