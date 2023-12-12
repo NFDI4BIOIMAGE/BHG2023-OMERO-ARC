@@ -1,0 +1,90 @@
+<OME xmlns="http://www.openmicroscopy.org/Schemas/OME/2016-06" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openmicroscopy.org/Schemas/OME/2016-06 http://www.openmicroscopy.org/Schemas/OME/2016-06/ome.xsd">
+  <Image ID="Image:1" Name="MBEN-slide1_W7A1_Channel3_R8.tif">
+    <Pixels ID="Pixels:1" DimensionOrder="XYCZT" Type="uint16" SizeX="15008" SizeY="8576" SizeZ="1" SizeC="1" SizeT="1">
+      <MetadataOnly/>
+    </Pixels>
+    <AnnotationRef ID="Annotation:-336742791481300083788494293310459675232"/>
+    <AnnotationRef ID="Annotation:-77778532244800209306471290839212172399"/>
+  </Image>
+  <Image ID="Image:2" Name="MBEN-slide1_W5A1_Channel3_R8.tif">
+    <Pixels ID="Pixels:2" DimensionOrder="XYCZT" Type="uint16" SizeX="19296" SizeY="10720" SizeZ="1" SizeC="1" SizeT="1">
+      <MetadataOnly/>
+    </Pixels>
+    <AnnotationRef ID="Annotation:-142875123191451671037777556500669185937"/>
+    <AnnotationRef ID="Annotation:-320099137644098468309233987805639564753"/>
+  </Image>
+  <Image ID="Image:3" Name="MBEN-slide1_W6A2_Channel3_R8.tif">
+    <Pixels ID="Pixels:3" DimensionOrder="XYCZT" Type="uint16" SizeX="10720" SizeY="10720" SizeZ="1" SizeC="1" SizeT="1">
+      <MetadataOnly/>
+    </Pixels>
+    <AnnotationRef ID="Annotation:-251922870140417372426932850635906329828"/>
+    <AnnotationRef ID="Annotation:-284925727710305030293044186685978552559"/>
+  </Image>
+  <Image ID="Image:4" Name="MBEN-slide1_W6A1_Channel3_R8.tif">
+    <Pixels ID="Pixels:4" DimensionOrder="XYCZT" Type="uint16" SizeX="10720" SizeY="12864" SizeZ="1" SizeC="1" SizeT="1">
+      <MetadataOnly/>
+    </Pixels>
+    <AnnotationRef ID="Annotation:-172964881071051911806029913311220299763"/>
+    <AnnotationRef ID="Annotation:-190651156720332945834695377977553743967"/>
+  </Image>
+  <Image ID="Image:5" Name="MBEN-slide1_W4A1_Channel3_R8.tif">
+    <Pixels ID="Pixels:5" DimensionOrder="XYCZT" Type="uint16" SizeX="12864" SizeY="15008" SizeZ="1" SizeC="1" SizeT="1">
+      <MetadataOnly/>
+    </Pixels>
+    <AnnotationRef ID="Annotation:-92982478145955849929616291502716067459"/>
+    <AnnotationRef ID="Annotation:-118741541811681062878751681713586350024"/>
+  </Image>
+  <StructuredAnnotations>
+    <CommentAnnotation ID="Annotation:-336742791481300083788494293310459675232" Namespace="Image:1">
+      <Value>MBEN-slide1_W7A1_Channel3_R8.tif</Value>
+    </CommentAnnotation>
+    <MapAnnotation ID="Annotation:-77778532244800209306471290839212172399" Namespace="openmicroscopy.org/cli/transfer/prepare">
+      <Value>
+        <M K="software">omero-cli-transfer</M>
+        <M K="version">0.8.0</M>
+        <M K="packing_timestamp">12/12/2023, 13:28:00</M>
+      </Value>
+    </MapAnnotation>
+    <CommentAnnotation ID="Annotation:-142875123191451671037777556500669185937" Namespace="Image:2">
+      <Value>MBEN-slide1_W5A1_Channel3_R8.tif</Value>
+    </CommentAnnotation>
+    <MapAnnotation ID="Annotation:-320099137644098468309233987805639564753" Namespace="openmicroscopy.org/cli/transfer/prepare">
+      <Value>
+        <M K="software">omero-cli-transfer</M>
+        <M K="version">0.8.0</M>
+        <M K="packing_timestamp">12/12/2023, 13:28:02</M>
+      </Value>
+    </MapAnnotation>
+    <CommentAnnotation ID="Annotation:-251922870140417372426932850635906329828" Namespace="Image:3">
+      <Value>MBEN-slide1_W6A2_Channel3_R8.tif</Value>
+    </CommentAnnotation>
+    <MapAnnotation ID="Annotation:-284925727710305030293044186685978552559" Namespace="openmicroscopy.org/cli/transfer/prepare">
+      <Value>
+        <M K="software">omero-cli-transfer</M>
+        <M K="version">0.8.0</M>
+        <M K="packing_timestamp">12/12/2023, 13:28:05</M>
+      </Value>
+    </MapAnnotation>
+    <CommentAnnotation ID="Annotation:-172964881071051911806029913311220299763" Namespace="Image:4">
+      <Value>MBEN-slide1_W6A1_Channel3_R8.tif</Value>
+    </CommentAnnotation>
+    <MapAnnotation ID="Annotation:-190651156720332945834695377977553743967" Namespace="openmicroscopy.org/cli/transfer/prepare">
+      <Value>
+        <M K="software">omero-cli-transfer</M>
+        <M K="version">0.8.0</M>
+        <M K="packing_timestamp">12/12/2023, 13:28:07</M>
+      </Value>
+    </MapAnnotation>
+    <CommentAnnotation ID="Annotation:-92982478145955849929616291502716067459" Namespace="Image:5">
+      <Value>MBEN-slide1_W4A1_Channel3_R8.tif</Value>
+    </CommentAnnotation>
+    <MapAnnotation ID="Annotation:-118741541811681062878751681713586350024" Namespace="openmicroscopy.org/cli/transfer/prepare">
+      <Value>
+        <M K="software">omero-cli-transfer</M>
+        <M K="version">0.8.0</M>
+        <M K="packing_timestamp">12/12/2023, 13:28:09</M>
+      </Value>
+    </MapAnnotation>
+  </StructuredAnnotations>
+</OME>
+
