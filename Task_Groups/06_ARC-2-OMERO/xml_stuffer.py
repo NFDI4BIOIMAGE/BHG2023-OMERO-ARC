@@ -11,17 +11,21 @@ def get_arguments():
 
 if __name__ == "__main__":
     xml_path, omero_project, omero_dataset = get_arguments()
-
+    
+    # Read the transfer.xml file as a ome object
     transfer = ome_types.from_xml(xml_path)
 
+    # Add the Project and Dataset to the ome object and link them
     transfer.projects.append(ome_types.model.Project(name = omero_project))
     transfer.datasets.append(ome_types.model.Dataset(name = omero_dataset))
     transfer.projects[0].dataset_refs.append(
         ome_types.model.DatasetRef(id=transfer.datasets[0].id))
 
+    # Link every image in the transfer.xml to the dataset
     for image in transfer.images:
         transfer.datasets[0].image_refs.append(ome_types.model.ImageRef(id=image.id))
 
+    # Convert ome object back to xml and replace the original transfer file
     xml = transfer.to_xml()
     with open(xml_path, 'w') as xml_file:
         xml_file.write(xml)                   
