@@ -14,10 +14,8 @@ omero login \
     -g $OMERO_GROUP \
     -w $OMERO_PWD
 
-project_id=$(omero obj new Project name=$OMERO_DATASET)
-dataset_id=$(omero obj new Dataset name=$OMERO_PROJECT)
-omero obj new ProjectDatasetLink parent=$project_id child=$dataset_id
-
 omero transfer prepare $ARC_ASSAY_PATH
+python3 xml_stuffer.py $ARC_ASSAY_PATH/transfer.xml $OMERO_PROJECT $OMERO_DATASET
 omero transfer unpack --folder $ARC_ASSAY_PATH
+
 
