@@ -42,3 +42,23 @@ Suggestion: alphabetical order (surname):
 |Michele Bortolomeazzi|[@MicheleBortol](https://github.com/michelebortol)|https://orcid.org/0000-0001-5805-5774||
 |Josh Moore|[@joshmoore](https://github.com/joshmoore)|https://orcid.org/0000-0003-4028-811X|[https://ror.org/05tpnw772](https://ror.org/05tpnw772)|
 
+## Acknowledgement
+🚧 Under construction. 🚧
+
+To be filled after the Hackathon.
+
+## Funding enabling project leads organization and Hackathon participation
+🚧 Under construction. 🚧
+
+#### DataPLANT and NFDI4BIOIMAGE
+We acknowledge the support of DataPLANT and NFDI4BIOIMAGE, both funded by the German Research Foundation
+(DFG) within the framework of the NFDI – project numbers: 442077441 and 501864659.
+
+### Other Organisations
+#### CEPLAS
+Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) within Germany’s Excellence Strategy – EXC-2048/1 – project number 390686111.
+
+#### CECAD
+Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy - EXC 2030 - 390661388.
+
+#### CRC TRR341
