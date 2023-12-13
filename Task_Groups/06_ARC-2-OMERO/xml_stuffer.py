@@ -29,3 +29,32 @@ if __name__ == "__main__":
     xml = transfer.to_xml()
     with open(xml_path, 'w') as xml_file:
         xml_file.write(xml)                   
+
+
+
+
+
+# Important info for OMER
+ome.project = isa.study   # Study
+ome.Dataset = isa.        # Assay
+
+ome.screen = isa.         # Study
+ome.plate  = isa.         # Assay
+ome.materials = isa.      # Well
+
+ome.project.owner.Name = isa.          #  Investigation person First Name
+ome.project.owner.LastName = isa.      # Investigation person last name
+ome.project.owner.Email = isa.         # Investigation person Email
+
+ome.project.owner.institution = isa.   # Investigation person Affiliation
+
+ome.project.name = isa.               # study title
+ome.project.description = isa.        # Study Description 
+
+ome.image.id = isa.      # Image ID
+ome.image.SizeX = isa.    # Image SizeX
+ome.image.SizeY = isa.    # Image SizeY
+ome.image.pixel.SizeX = isa. # Image Size X
+ome.image.pixel.SizeY = isa. # Imas
+ome.image.pixel.SizeZ = isa.
+ome.image.pixel.sizeUnit = isa.
