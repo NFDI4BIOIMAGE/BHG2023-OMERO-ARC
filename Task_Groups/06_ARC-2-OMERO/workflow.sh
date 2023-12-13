@@ -1,13 +1,12 @@
 #!/bin/bash
 set -euxo pipefail
 
-ARC_ASSAY_PATH=$1
-OMERO_SERVER=$2
-OMERO_USER=$3
-OMERO_GROUP=$4
-OMERO_PWD=$5
-OMERO_PROJECT=$6
-OMERO_DATASET=$7
+ISA_INVESTIGATION_PATH=$1
+ARC_ASSAY_PATH=$2
+OMERO_SERVER=$3
+OMERO_USER=$4
+OMERO_GROUP=$5
+OMERO_PWD=$6
 
 # Login to OMERO, the session is used for all other commands
 omero login \
@@ -20,7 +19,8 @@ omero login \
 omero transfer prepare $ARC_ASSAY_PATH
 
 # Modify the transfer.xml file to add all the annotations extracted from the ARC
-python3 xml_stuffer.py $ARC_ASSAY_PATH/transfer.xml $OMERO_PROJECT $OMERO_DATASET
+python3 metadata_filler.py $ARC_ASSAY_PATH/transfer.xml  $ISA_INVESTIGATION_PATH \
+	$ARC_ASSAY_PATH
 
 # Import the images and add all annotations using the modified transfer.xml
 omero transfer unpack --folder $ARC_ASSAY_PATH
