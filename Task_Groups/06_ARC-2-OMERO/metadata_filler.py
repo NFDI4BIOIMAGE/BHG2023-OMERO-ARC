@@ -14,7 +14,8 @@ if __name__ == "__main__":
     xml_path, isa_investigation_path, assay_path= get_arguments()
 
     transfer = ome_types.from_xml(xml_path)
-    investigation = pd.read_excel(isa_investigation_path, header=None)
+    investigation = pd.read_excel(isa_investigation_path, header=None, dtype = str)
+    investigation = investigation.fillna("None")
     investigation = dict(zip(investigation[0], investigation[1]))
 
     transfer.projects.append(
@@ -42,8 +43,41 @@ if __name__ == "__main__":
     transfer.projects[0].annotation_refs.append(
             ome_types.model.AnnotationRef(id=owner_details.id))
 
+    protocol_details = ome_types.model.MapAnnotation(
+            namespace = "ARC:ISA:STUDY:STUDY PROTOCOLS",
+            value = {"ms" : [{"k" : "Study Protocol Name",
+                "value" : investigation["Study Protocol Name"]},
+                {"k" : "Study Protocol Type",
+                    "value" : investigation["Study Protocol Type"]},
+                {"k" : "Study Protocol Description",
+                    "value" : investigation["Study Protocol Description"]},
+                {"k" : "Study Protocol Components Name",
+                    "value" : investigation["Study Protocol Components Name"]},
+                {"k" : "Study Protocol Components Type",
+                    "value" : investigation["Study Protocol Components Type"]}]})
+    transfer.structured_annotations.append(protocol_details)
+    transfer.projects[0].annotation_refs.append(
+            ome_types.model.AnnotationRef(id=protocol_details.id))
+
+    publication_details = ome_types.model.MapAnnotation(
+            namespace = "ARC:ISA:INVESTIGATION:INVESTIGATION PUBLICATIONS",
+            value = {"ms" : [{"k" : "Investigation Publication DOI",
+                "value" : investigation["Investigation Publication DOI"]},
+                {"k" : "Investigation Publication PubMed ID",
+                    "value" : investigation["Investigation Publication PubMed ID"]},
+                {"k" : "Investigation Publication Author List",
+                    "value" : investigation["Investigation Publication Author List"]},
+                {"k" : "Investigation Publication Title",
+                    "value" : investigation["Investigation Publication Title"]},
+                {"k" : "Investigation Publication Status",
+                    "value" : investigation["Investigation Publication Status"]}]})
+    transfer.structured_annotations.append(publication_details)
+    transfer.projects[0].annotation_refs.append(
+            ome_types.model.AnnotationRef(id=publication_details.id))
+
     isa_assay_path = "/".join(assay_path.split("/")[:-2]) + "/isa.assay.xlsx"
-    assay = pd.read_excel(isa_assay_path, header=None, sheet_name="Assay")
+    assay = pd.read_excel(isa_assay_path, header=None, sheet_name="Assay", dtype = str)
+    assay = assay.fillna("None")
     assay = dict(zip(assay[0], assay[1]))
 
     assay_metadata_details = ome_types.model.MapAnnotation(
