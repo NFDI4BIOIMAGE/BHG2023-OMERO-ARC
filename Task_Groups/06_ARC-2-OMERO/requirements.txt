@@ -1,0 +1,4 @@
+ome-types==0.4.2
+omero-cli-transfer==0.8.0
+omero-py==5.13.1
+pandas==2.1.4
