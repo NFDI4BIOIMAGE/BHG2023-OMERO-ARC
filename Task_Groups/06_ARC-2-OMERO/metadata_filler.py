@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     transfer = ome_types.from_xml(xml_path)
     investigation = pd.read_excel(isa_investigation_path, header=None, dtype = str)
-    investigation = investigation.fillna("None")
+    investigation = investigation.fillna("")
     investigation = dict(zip(investigation[0], investigation[1]))
 
     transfer.projects.append(
@@ -77,40 +77,45 @@ if __name__ == "__main__":
 
     isa_assay_path = "/".join(assay_path.split("/")[:-2]) + "/isa.assay.xlsx"
     assay = pd.read_excel(isa_assay_path, header=None, sheet_name="Assay", dtype = str)
-    assay = assay.fillna("None")
-    assay = dict(zip(assay[0], assay[1]))
+    assay = assay.fillna("")
+    assay_cols = []
+    for i in assay.columns[1:]:
+        assay_cols.append(dict(zip(assay[0], assay[i])))
+
+    for assay_col in assay_cols:
+        assay_performer_details = ome_types.model.MapAnnotation(
+                namespace = "ARC:ISA:ASSAY:ASSAY PERFORMER",
+                value = {"ms" : [{"k" : "Last Name",
+                    "value" : assay_col["Last Name"]},
+                    {"k" : "First Name",
+                        "value" : assay_col["First Name"]},
+                    {"k" : "Email",
+                        "value" : assay_col["Email"]},
+                    {"k" : "Address",
+                        "value" : assay_col["Address"]},
+                    {"k" : "Roles",
+                        "value" : assay_col["Roles"]},
+                    {"k" : "Affiliation",
+                        "value" : assay_col["Affiliation"]}]})
+        transfer.structured_annotations.append(assay_performer_details)
+        transfer.datasets[0].annotation_refs.append(
+                ome_types.model.AnnotationRef(id=assay_performer_details.id))
 
     assay_metadata_details = ome_types.model.MapAnnotation(
             namespace = "ARC:ISA:ASSAY:ASSAY METADATA",
-            value = {"ms" : [{"k" : "Measurement Type",
-                "value" : assay["Measurement Type"]},
+            value = {"ms" : [{"k" : "Assay Identifier",
+                    "value" : assay_cols[0]["Assay Identifier"]},
+                {"k" : "Measurement Type",
+                    "value" : assay_cols[0]["Measurement Type"]},
                 {"k" : "Measurement Type Term Accession Number",
-                    "value" : assay["Measurement Type Term Accession Number"]},
+                    "value" : assay_cols[0]["Measurement Type Term Accession Number"]},
                 {"k" : "Technology Type",
-                    "value" : assay["Technology Type"]},
+                    "value" : assay_cols[0]["Technology Type"]},
                 {"k" : "Technology Platform",
-                    "value" : assay["Technology Platform"]}]})
+                    "value" : assay_cols[0]["Technology Platform"]}]})
     transfer.structured_annotations.append(assay_metadata_details)
     transfer.datasets[0].annotation_refs.append(
             ome_types.model.AnnotationRef(id=assay_metadata_details.id))
-
-    assay_performer_details = ome_types.model.MapAnnotation(
-            namespace = "ARC:ISA:ASSAY:ASSAY PERFORMER",
-            value = {"ms" : [{"k" : "Last Name",
-                "value" : assay["Last Name"]},
-                {"k" : "First Name",
-                    "value" : assay["First Name"]},
-                {"k" : "Email",
-                    "value" : assay["Email"]},
-                {"k" : "Address",
-                    "value" : assay["Address"]},
-                {"k" : "Roles",
-                    "value" : assay["Roles"]},
-                {"k" : "Affiliation",
-                    "value" : assay["Affiliation"]}]})
-    transfer.structured_annotations.append(assay_performer_details)
-    transfer.datasets[0].annotation_refs.append(
-            ome_types.model.AnnotationRef(id=assay_performer_details.id))
 
     # Link every image in the transfer.xml to the dataset
     for image in transfer.images:
