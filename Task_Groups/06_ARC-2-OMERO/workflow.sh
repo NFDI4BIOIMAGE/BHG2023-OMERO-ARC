@@ -1,9 +1,9 @@
 #!/bin/bash
 set -euxo pipefail
 
-ISA_INVESTIGATION_PATH=$1
-ARC_ASSAY_PATH=$2
-OMERO_SERVER=$3
+ISA_INVESTIGATION_PATH=$1 # Path to the isa.investigation.xlsx file
+ARC_ASSAY_PATH=$2 # Path to the dataset folder of the assay to import
+OMERO_SERVER=$3 
 OMERO_USER=$4
 OMERO_GROUP=$5
 OMERO_PWD=$6
