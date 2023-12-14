@@ -14,7 +14,7 @@ Repository: https://git.nfdi4plants.org/torsten.stoeter/rat-mri-ls
 * Each file needs to be annotated in isa.assay.xslx => 32k lines in spreadsheet
 
 
-## Vendor specific image container vs extracted open formats in ARC: CLSM z-stacks and MIPs
+## Vendor specific image container vs. extracted open formats in ARC: CLSM z-stacks and MIPs
 
 MIPs: maximum intensity projection
 
