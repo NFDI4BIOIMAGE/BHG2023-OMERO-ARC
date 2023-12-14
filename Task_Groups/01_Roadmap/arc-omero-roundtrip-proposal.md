@@ -1,18 +1,18 @@
 # 12/12/23: ARC <-> OMERO Interop proposal
 
 - [12/12/23: ARC \<-\> OMERO Interop proposal](#121223-arc---omero-interop-proposal)
-  - [Introduction](#introduction)
-  - [Integration of OMERO as metadata enrichment process](#integration-of-omero-as-metadata-enrichment-process)
-  - [Detailed example (Screen-Plate-Well)](#detailed-example-screen-plate-well)
-    - [Screen = Study (Sample preparation)](#screen--study-sample-preparation)
-    - [Plate = Assay](#plate--assay)
-      - [Plate loading sheet](#plate-loading-sheet)
-      - [Image acquisition sheet (pre-OMERO)](#image-acquisition-sheet-pre-omero)
-      - [Image acquisition sheet (post-OMERO)](#image-acquisition-sheet-post-omero)
+- [Introduction](#introduction)
+- [Integration of OMERO as metadata enrichment process](#integration-of-omero-as-metadata-enrichment-process)
+- [Detailed example (Screen-Plate-Well)](#detailed-example-screen-plate-well)
+  - [Screen = Study (Sample preparation)](#screen--study-sample-preparation)
+  - [Plate = Assay](#plate--assay)
+    - [Plate loading sheet](#plate-loading-sheet)
+    - [Image acquisition sheet (pre-OMERO)](#image-acquisition-sheet-pre-omero)
+    - [Image acquisition sheet (post-OMERO)](#image-acquisition-sheet-post-omero)
 - [Things left to-do / up for discussion](#things-left-to-do--up-for-discussion)
 
 
-## Introduction
+# Introduction
 
 In the cologne pre-hackathon, 2 basic OMERO container use cases that should be depicted in the ARC have been identified: 
 
@@ -63,7 +63,7 @@ end
 end
 ```
 
-## Integration of OMERO as metadata enrichment process
+# Integration of OMERO as metadata enrichment process
 
 In general, we want to avoid re-implementing OMERO (analysis) features in the ARC. Since experimenters will have to look at their images, we want to keep the OMERO client as the main interface for this. This also means that image-level metadata cannot be annotated in the arc context before looking at the images in the OMERO client. This leads to the proposition of introducing OMERO import/export as a metadata enrichment process:
 
@@ -112,9 +112,9 @@ OA -->|"export OMERO-enriched <br> metadata (sheets)"| O2A --> IM1
 O2A --> IM2
 ```
 
-## Detailed example (Screen-Plate-Well)
+# Detailed example (Screen-Plate-Well)
 
-### Screen = Study (Sample preparation)
+## Screen = Study (Sample preparation)
 
 This is the `Screen` equivalent that tracks sample provenance in the arc context (sample preparation metadata). It is a `Study` in the arc context.
 
@@ -127,11 +127,11 @@ This is the `Screen` equivalent that tracks sample provenance in the arc context
 tissue_1 | arabidopsis thaliana | sample_at_1
 tissue_2 |  mus musculus| sample_mm_1
 
-### Plate = Assay
+## Plate = Assay
 
 This is the `Plate` equivalent that tracks plate metadata in the arc context. It is an `Assay` with several sheets, tracking `Plate loading` and `Image aquisition`.
 
-#### Plate loading sheet
+### Plate loading sheet
 
 This sheet tracks the process of loading the wells of a 96-well plate with samples, using the `Well number` ontology term as a parameter.
 
@@ -148,7 +148,7 @@ This sheet tracks the process of loading the wells of a 96-well plate with sampl
 | sample_mm_1 | 10mg | B2 | Well_ID_B2 |
 | sample_mm_1 | 20mg | B3 | Well_ID_B3 |
 
-#### Image acquisition sheet (pre-OMERO)
+### Image acquisition sheet (pre-OMERO)
 
 Metadata on the image directory level can be annotated by the experimenter without looking at single images. Examples include the instrument and objective used to produce the contents of a folder containing images of any format.
 
@@ -165,7 +165,7 @@ Well_ID_B1 | scanR HCS | scans_1.scanr |
 Well_ID_B2 | scanR HCS | scans_1.scanr |
 Well_ID_B3 | scanR HCS | scans_1.scanr |
 
-#### Image acquisition sheet (post-OMERO)
+### Image acquisition sheet (post-OMERO)
 
 After annotating metadata on the image directory level, The image directory should be processed with an adequate tool to add image-level metadata. In the case of OMERO, this means importing the image folder with the ARC metadata and then exporting it again with image-level metadata added to the `Image acquisition` sheet.
 
