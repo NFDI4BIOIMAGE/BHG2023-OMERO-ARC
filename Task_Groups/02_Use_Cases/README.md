@@ -14,11 +14,15 @@ Repository: https://git.nfdi4plants.org/torsten.stoeter/rat-mri-ls
 * Each file needs to be annotated in isa.assay.xslx => 32k lines in spreadsheet
 
 
-## Vendor specific image container
+## Vendor specific image container vs extracted open formats in ARC: CLSM z-stacks and MIPs
 
-* in this case Leica LIF files contain many images, i.e. different measurements with different parameters (samples, specimen, cultures, channels, ...)
-* this is a problem with respect to file based metadata annotation as done in ARC
-* therefore ARC specs encourage accompanying open formats besides raw data => data duplication or alternatively workflows for conversion
-* possible solution use vendor software for data conversion and processing
-* BUT: important technical metadata maybe lost (example: pixel sizes for maximum intensity projections in Leica software)
-* alternative workflow: use OMERO for understanding vendor specific file formats and image extraction (1->N) and perform MIP in OMERO with results moved back into ARC
+MIPs: maximum intensity projection
+
+Repository : https://git.nfdi4plants.org/natural-variation-and-evolution/microscopy_collection/map-by-seq_clsm-stacks
+
+* In this case Leica LIF files contain many images, i.e. different measurements with different parameters (samples, specimen, cultures, channels, ...)
+* This is a problem with respect to metadata annotation per file as done in ARC
+* ARC specs encourage accompanying open formats besides raw vendor specific data => data duplication or alternatively workflows for conversion
+* Possible solution use vendor software for data conversion and processing
+* BUT: the software needs to be available and important technical metadata may be lost (example: pixel sizes for maximum intensity projections in Leica software)
+* Alternative workflow: use OMERO for understanding and accessing vendor specific file formats and image extraction (1->N) and perform MIP in OMERO with results moved back into ARC.
