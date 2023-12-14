@@ -12,12 +12,16 @@ def get_arguments():
 
 if __name__ == "__main__":
     xml_path, isa_investigation_path, assay_path= get_arguments()
-
+    
+    # Read the transfer.xml file
     transfer = ome_types.from_xml(xml_path)
+
+    # Read the isa investigation file and use "" for empty values
     investigation = pd.read_excel(isa_investigation_path, header=None, dtype = str)
     investigation = investigation.fillna("")
     investigation = dict(zip(investigation[0], investigation[1]))
 
+    # Create project and dataset and link the dataset to the project
     transfer.projects.append(
             ome_types.model.Project(name = investigation["Study Identifier"],
                 description = investigation["Study Description"]))
@@ -27,6 +31,7 @@ if __name__ == "__main__":
         ome_types.model.DatasetRef(id=transfer.datasets[0].id))
     transfer.projects[0].annotation_refs = []
 
+    # Annotate the project with Key-Value pairs divided in namespaces
     owner_details = ome_types.model.MapAnnotation(
             namespace = "ARC:ISA:INVESTIGATION:INVESTIGATION CONTACTS",
             value = {"ms" : [{"k" : "Investigation Person First Name",
@@ -75,6 +80,9 @@ if __name__ == "__main__":
     transfer.projects[0].annotation_refs.append(
             ome_types.model.AnnotationRef(id=publication_details.id))
 
+    
+    # Read isa.assay.xlsx, and set empy values to "".
+    # Here we need to process multiple excel column for the values
     isa_assay_path = "/".join(assay_path.split("/")[:-2]) + "/isa.assay.xlsx"
     assay = pd.read_excel(isa_assay_path, header=None, sheet_name="Assay", dtype = str)
     assay = assay.fillna("")
@@ -82,6 +90,7 @@ if __name__ == "__main__":
     for i in assay.columns[1:]:
         assay_cols.append(dict(zip(assay[0], assay[i])))
 
+    # Annotate the dataset with Key-Value pairs divided in namespaces
     for assay_col in assay_cols:
         assay_performer_details = ome_types.model.MapAnnotation(
                 namespace = "ARC:ISA:ASSAY:ASSAY PERFORMER",
@@ -126,21 +135,3 @@ if __name__ == "__main__":
     with open(xml_path, 'w') as xml_file:
         xml_file.write(xml)                   
 
-
-    #ome.screen = investigation["Study Identifier"]         # Study
-    #ome.plate  = assay_path.split("/")[-2]         # Assay
-    #ome.materials = isa.      # Well
-
-
-    #ome.project.owner.institution = isa.   # Investigation person Affiliation
-
-    #ome.project.name = isa.               # study title
-    #ome.project.description = isa.        # Study Description 
-
-    #ome.image.id = isa.      # Image ID
-    #ome.image.SizeX = isa.    # Image SizeX
-    #ome.image.SizeY = isa.    # Image SizeY
-    #ome.image.pixel.SizeX = isa. # Image Size X
-    #ome.image.pixel.SizeY = isa. # Imas
-    #ome.image.pixel.SizeZ = isa.
-    #ome.image.pixel.sizeUnit = isa.
