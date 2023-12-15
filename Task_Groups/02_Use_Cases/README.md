@@ -5,7 +5,7 @@ Worked on by: Michele Bortolomeazzi, Eik Dahms, Andrea Schrader, Torsten Stöter
 
 ## Mutlimodal imaging ARC: MRI and LightSheet image stacks of Rat brains
 
-Repository: https://git.nfdi4plants.org/torsten.stoeter/rat-mri-ls
+Repository (only for internal use): https://git.nfdi4plants.org/torsten.stoeter/rat-mri-ls
 
 * Dataset consists of MRI and LightSheet image stacks of four rats
 * LightSheet image has ~4k z slices and 2 channels => many binary files >32k with small size ~8MB
