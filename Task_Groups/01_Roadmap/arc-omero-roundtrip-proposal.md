@@ -175,20 +175,24 @@ After annotating metadata on the image directory level, The image directory shou
 
 | Input [Material Name] | Parameter [$OMERO-PROJECT-ID] | Parameter[$OMERO-TERM-FOR-Xpos] | Parameter[$OMERO-TERM-FOR-Ypos] | Output [Data Directory] | Output Pointer [$OMERO-TERM-FOR-IMAGE-ID] |
 |---|---|---|---|---|---|
-| Well_ID_A1 | 1337 | 1 | scans_1.scanr | 0 |
-| Well_ID_A1 | 1337 | 2 | scans_1.scanr | 1 |
-| Well_ID_A2 | 1337 | 3 | scans_1.scanr | 2 |
-| Well_ID_A2 | 1337 | 1 | scans_1.scanr | 3 |
-| Well_ID_A3 | 1337 | 2 | scans_1.scanr | 4 |
-| Well_ID_A3 | 1337 | 3 | scans_1.scanr | 5 |
-| Well_ID_B1 | 1337 | 1 | scans_1.scanr | 6 |
-| Well_ID_B1 | 1337 | 2 | scans_1.scanr | 7 |
-| Well_ID_B2 | 1337 | 3 | scans_1.scanr | 8 |
-| Well_ID_B2 | 1337 | 1 | scans_1.scanr | 9 |
-| Well_ID_B3 | 1337 | 2 | scans_1.scanr | 10 |
-| Well_ID_B3 | 1337 | 3 | scans_1.scanr | 11 |
+| Well_ID_A1 | 1337 | 1 | 1 | scans_1.scanr | 0 |
+| Well_ID_A1 | 1337 | 2 | 2 | scans_1.scanr | 1 |
+| Well_ID_A2 | 1337 | 3 | 3 | scans_1.scanr | 2 |
+| Well_ID_A2 | 1337 | 1 | 1 | scans_1.scanr | 3 |
+| Well_ID_A3 | 1337 | 2 | 2 | scans_1.scanr | 4 |
+| Well_ID_A3 | 1337 | 3 | 3 | scans_1.scanr | 5 |
+| Well_ID_B1 | 1337 | 1 | 1 | scans_1.scanr | 6 |
+| Well_ID_B1 | 1337 | 2 | 2 | scans_1.scanr | 7 |
+| Well_ID_B2 | 1337 | 3 | 3 | scans_1.scanr | 8 |
+| Well_ID_B2 | 1337 | 1 | 1 | scans_1.scanr | 9 |
+| Well_ID_B3 | 1337 | 2 | 2 | scans_1.scanr | 10 |
+| Well_ID_B3 | 1337 | 3 | 3 | scans_1.scanr | 11 |
 
 # Things left to-do / up for discussion
+
+- Note that this proposal requires the implementation of Data Fragment Selectors/Pointers (see [nfdi4plants/ARC-specification#80](https://github.com/nfdi4plants/ARC-specification/issues/80))
+
+- 
 
 - Find out how to extract the image grouping from omero. XML for reference, which is the `pack` output of an omero container that has 2 files with several images each:
     ```xml
