@@ -56,7 +56,6 @@ Suggestion: alphabetical order (surname):
 To be filled after the Hackathon.
 
 ## Funding enabling project leads organization and Hackathon participation
-🚧 Under construction. 🚧
 
 #### DataPLANT and NFDI4BIOIMAGE
 We acknowledge the support of DataPLANT and NFDI4BIOIMAGE, both funded by the German Research Foundation
