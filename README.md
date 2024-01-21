@@ -22,6 +22,68 @@ Initially prepared and suggested based on defined task of participants.
 - Prep_stage/
   - You can create this directroy inside your cloned BHG2023-OMERO-ARC repo and use it when you want to prepare files or place data in this repo locally but do not want to push these to this repo.
  
+
+<br/>
+
+---
+---
+
+## Overview of the content in this repository
+
+```
+.
+├── .zenodo.json
+├── CITATION.cff
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── Reporting
+│   ├── BioHack_2023_Final_OMERO_ARC.pdf
+│   └── BioHack_2023_Intro_OMERO_ARC.pdf
+├── Task_Groups
+│   ├── 01_Roadmap
+│   │   ├── README.md
+│   │   └── arc-omero-roundtrip-proposal.md
+│   ├── 02_Use_Cases
+│   │   └── README.md
+│   ├── 03_RDMcompliant_Metadata
+│   │   ├── IDRtemplates-2-ARC
+│   │   ├── IDRtemplates-2-ARC.md
+│   │   ├── README.md
+│   │   ├── REMBI-2-ARC
+│   │   ├── REMBI-2-ARC.md
+│   │   ├── REMBI_Templates
+│   │   │   └── RGC_Ca2+_imaging.csv
+│   │   └── REMBI_Templates.md
+│   ├── 04_Metadata_Transfer
+│   │   └── README.md
+│   ├── 05_OMERO-2-ARC
+│   │   └── README.md
+│   ├── 06_ARC-2-OMERO
+│   │   ├── README.md
+│   │   ├── metadata_filler.py
+│   │   ├── requirements.txt
+│   │   ├── transfer.xml
+│   │   └── workflow.sh
+│   ├── 07_Test_Tools
+│   │   ├── README.md
+│   │   ├── omero-cli-transfer-arc-installation.md
+│   │   └── omero-cli-transfer-arc-report.md
+│   ├── 08_Teaching_Material
+│   │   └── README.md
+│   ├── 09_Documentation
+│   │   └── README.md
+│   └── README.md
+└── images
+    └── rat-brain-ls.png
+```
+21-01-2024 (created using tree v2.1.1 © 1996 - 2023 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro)
+
+<br/>
+
+---
+---
+
 ## Contributions
 
 **Notes on contributions during the Hackathon are [here](CONTRIBUTING.md).**
