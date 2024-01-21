@@ -1,0 +1,413 @@
+cff-version: 1.2.0
+message: "If you use content of this repository, please cite it using these metadata. Authors are in alphabetical order!"
+repository: "https://github.com/NFDI4BIOIMAGE/BHG2023-OMERO-ARC"
+authors:
+  - affiliation: Department of Biology/Chemistry and Center for Cellular Nanoanalytics, University Osnabrück, Germany
+    alias: MM-abdrabbou
+    city: Osnabrück
+    country: DE
+    family-names: Abdrabbou
+    given-names: Mohamed M.
+    orcid: "https://orcid.org/0000-0003-2778-7483"
+  - affiliation: Center for Advanced Imaging, Heinrich-Heine-Universität Düsseldorf, Düsseldorf, Germany 
+    alias: Tom-TBT
+    city: Düsseldorf
+    country: DE
+    family-names: Boissonnet
+    given-names: Tom
+    orcid: "https://orcid.org/0000-0002-3328-9467"
+  - affiliation: Single-cell Open Lab, German Cancer Research Center (DKFZ), Heidelberg, Germany
+    alias: MicheleBortol 
+    city: Heidelberg
+    country: DE
+    family-names: Bortolomeazzi
+    given-names: Michele
+    orcid: "https://orcid.org/0000-0001-5805-5774"
+  - affiliation: Divisions of Molecular Cell and Developmental Biology, and Computational Biology, University of Dundee, Dundee, Scotland, UK
+    alias: jburel 
+    city: Dundee
+    country: UK
+    family-names: Burel
+    given-names: Jean-Marie
+    orcid: "https://orcid.org/0000-0002-1789-1861"
+  - affiliation: Regional Computer Center (RRZK), University of Cologne, Cologne, Germany
+    alias: eik-dahms
+    city: Cologne
+    country: DE
+    family-names: Dahms
+    given-names: Eik
+    orcid: "https://orcid.org/0000-0002-7452-1146"
+  - affiliation: Imaging Platform & Cluster of Excellence on Plant Sciences (CEPLAS), University of Cologne, Cologne, Germany
+    city: Cologne
+    country: DE
+    family-names: Kakanj
+    given-names: Parisa
+  - affiliation: Cologne Excellence Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD), University of Cologne, Cologne, Germany
+    alias: Nirkan
+    city: Cologne
+    country: DE
+    family-names: Kandpal
+    given-names: Niraj
+    orcid: "https://orcid.org/0009-0007-5101-4786"
+  - affiliation: The Jackson Laboratory, Farmington, CT, USA
+    alias: erickmartins
+    city: Farmington
+    country: USA
+    family-names: Martins Ratamero
+    given-names: Erick
+    orcid: "https://orcid.org/0000-0002-7545-3675"
+  - affiliation: Cologne Excellence Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD), Cologne, Germany
+    alias: cmohl2013
+    city: Bonn
+    country: DE
+    family-names: Möhl
+    given-names: Christoph
+    orcid: "https://orcid.org/0000-0002-0829-5101"
+  - affiliation: German BioImaging—Society for Microscopy and Image Analysis e.V., Constance, Germany
+    alias: joshmoore
+    city: Constance 
+    country: DE
+    family-names: Moore
+    given-names: Joshua A.
+    orcid: "https://orcid.org/0000-0003-4028-811X"
+  - affiliation: Computational Systems Biology, University of Kaiserslautern-Landau, Kaiserslautern, Germany
+    alias: muehlhaus
+    city: Kaiserslautern
+    country: DE
+    family-names: Mühlhaus
+    given-names: Timo
+    orcid: "https://orcid.org/0000-0003-3925-6778"
+  - affiliation: Cologne Excellence Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD), Cologne, Germany
+    alias: AstridSchauss
+    city: Cologne
+    country: DE
+    family-names: Schauss
+    given-names: Astrid
+    orcid: "https://orcid.org/0000-0002-6658-2192"
+  - affiliation: Computational Systems Biology, University of Kaiserslautern-Landau, Kaiserslautern, Germany
+    alias: kMutagene 
+    city: Kaiserslautern 
+    country: DE
+    family-names: Schneider
+    given-names: Kevin
+    orcid: "https://orcid.org/0000-0002-2198-5262" 
+  - affiliation: Data Science and Management & Cluster of Excellence on Plant Sciences (CEPLAS), University of Cologne, Cologne, Germany
+    alias: andreaschrader
+    city: Cologne
+    country: DE
+    family-names: Schrader
+    given-names: Andrea
+    orcid: "https://orcid.org/0000-0002-3879-7057"
+  - affiliation: Leibniz Institute for Neurobiology (LIN), Magdeburg, Germany
+    alias: tstoeter
+    city: Magdeburg
+    country: DE
+    family-names: Stöter 
+    given-names: Torsten
+  - affiliation: Regional Computer Center (RRZK), University of Cologne, Cologne, Germany
+    alias: mvals
+    city: Cologne
+    country: DE
+    family-names: Valencia-Schneider 
+    given-names:  Monica E.
+    orcid: "https://orcid.org/0000-0003-3430-2683"
+  - affiliation: Computational Systems Biology, University of Kaiserslautern-Landau, Kaiserslautern, Germany
+    alias: HLWeil
+    city: Kaiserslautern 
+    country: DE
+    family-names: Weil
+    given-names: H. Lukas
+    orcid: "https://orcid.org/0000-0003-1945-6342"
+  - affiliation: Cologne Excellence Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD), Cologne, Germany
+    alias: pzentis
+    city: Cologne
+    country: DE
+    family-names: Zentis
+    given-names: Peter
+    orcid: "https://orcid.org/0000-0002-6999-132X"
+date-released: "2023-12-07"
+keywords:
+  - OMERO
+  - ARC
+  - REMBI
+  - metadata
+  - use cases
+  - multimodal data
+  - hackathon
+  - NFDI4Bioimage
+  - DataPLANT
+  - CECAD
+  - CEPLAS
+  - CRC-TRR341
+license: CC-BY-4.0
+title: BHG2023-OMERO-ARC (2nd e.NBI BioHackathon Germany project, repository)
+version: 0.9.0
+references:
+  - authors:
+      - family-names: Allen
+        given-names: Chris
+      - family-names: Burel
+        given-names: Jean-Marie
+      - family-names: Moore
+        given-names: Joshua A.
+      - family-names: Blackburn
+        given-names: Colin
+      - family-names: Linkert
+        given-names: Melissa
+      - family-names: Loynton
+        given-names: Scott
+      - family-names: MacDonald
+        given-names: Donald
+      - family-names: Moore
+        given-names: William J.
+      - family-names: Neves
+        given-names: Carlos
+      - family-names: Patterson
+        given-names: Andrew
+      - family-names: Porter
+        given-names: Michael
+      - family-names: Tarkowska
+        given-names: Aleksandra
+      - family-names: Loranger
+        given-names: Brian
+      - family-names: Avondo
+        given-names: Jerome
+      - family-names: Lagerstedt
+        given-names: Ingvar
+      - family-names: Lianas
+        given-names: Luca
+      - family-names: Leo
+        given-names: Simone
+      - family-names: Hands
+        given-names: Katherine
+      - family-names: Hay
+        given-names: Ron T.
+      - family-names: Patwardhan
+        given-names: Ardan
+      - family-names: Best
+        given-names: Christoph
+      - family-names: Kleywegt
+        given-names: Gerard J.
+      - family-names: Zanetti
+        given-names: Gianluigi
+      - family-names: Swedlow
+        given-names: Jason R.
+    date-published: "2012-02-28"
+    doi: 10.1038/nmeth.1896
+    end: 253
+    issue: 3
+    journal: Nature Methods
+    scope: "A reference for OMERO - model-driven data management for experimental biology."
+    start: 245
+    title: "OMERO: flexible, model-driven data management for experimental biology"
+    type: article
+    url: "https://doi.org/10.1038/nmeth.1896"
+    volume: 9  
+  - authors:
+      - family-names: Baker
+        given-names: Steve
+      - name: "tree contributors"
+    date-accessed: "2023-12-07"
+    license: GPL-2.0
+    repository: "https://github.com/Old-Man-Programmer/tree"
+    scope: "Used to create the file tree in the README provided as an overview of the repository."
+    title: tree
+    type: software
+    url: "https://oldmanprogrammer.net/source.php?dir=projects/tree"
+    version: v2.1.1
+    year: 2023
+  - authors:
+      - name: "DataPLANT community"
+    date-accessed: "2023-11-38"
+    license: CC-BY-4.0
+    repository: "https://github.com/nfdi4plants/ARC-specification"
+    scope: "The ARC specification underlying the conceptual discussions and setup towards OMERO-ARC interoperability."
+    title: "nfdi4plants/ARC-specification: 1.2"
+    type: software
+    url: "https://doi.org/10.5281/zenodo.10091038"
+    version: v1.2
+    year: 2023
+  - authors:
+      - family-names: Frey
+        given-names: Kevin
+      - name: "Swate contributors"
+    license: MIT
+    repository: "https://github.com/nfdi4plants/Swate"
+    scope: "Used for annotating an imaging experiment with respective ontologies."
+    title: "Swate v0.6.2 (GitHub repository)"
+    type: software
+    version: v0.6.2
+    year: 2022
+  - authors:
+      - family-names: Martins Ratamero
+        given-names: Erick
+      - family-names: Burel
+        given-names: Jean-Marie
+      - family-names: Sobolewski
+        given-names: Peter
+      - family-names: Moore
+        given-names: William J.
+    doi: 10.5281/zenodo.8383499
+    license: GPL-2.0
+    repository: "https://github.com/ome/omero-cli-transfer"
+    scope: "omero-cli-transfer is used in OMERO_ARC interoperability which was mainly covered here in a conceptual way in the interoperability topic and also by the OMERO-ARC plugin of C. Möhl for the omero-cli-transfer."
+    title: "ome/omero-cli-transfer: 0.8.0 - new `--simple` option in `pack` (0.8.0)"
+    type: software
+    url: https://doi.org/10.5281/zenodo.8383499
+    version: v0.8.0
+    year: 2023
+  - authors:
+      - family-names: Möhl
+        given-names: Christoph
+    license: GPL-3.0
+    repository: "https://github.com/cmohl2013/omero-arc"
+    scope: "Plugin for omero-cli-transfer for OMERO-ARC export."
+    title: "OMERO-ARC Plugin (GitHub repository)"
+    type: software
+    version: v0.0.1
+    year: 2023
+  - authors:
+      - affiliation: Oxford e-Research Centre, University of Oxford, UK
+        family-names: Sansone
+        given-names: Susanna-Assunta
+      - affiliation: Oxford e-Research Centre, University of Oxford, UK
+        family-names: Rocca-Serra
+        given-names: Philippe
+      - affiliation: Oxford e-Research Centre, University of Oxford, UK
+        family-names: Gonzalez-Beltran
+        given-names: Alejandra
+      - affiliation: Oxford e-Research Centre, University of Oxford, UK
+        family-names: Johnson
+        given-names: David
+      - name: ISA Community
+    date-released: "2016-10-28"
+    doi: 10.5281/zenodo.163640
+    license: CC-BY-4.0
+    publisher: Zenodo
+    repository: "https://github.com/ISA-tools/isa-specs"
+    scope: "ARC metadata is based on the isa model which also needs to be considered in OMERO-ARC interoperability."
+    title: ISA Model and Serialization Specifications 1.0 
+    type: technical note
+    version: 1.0
+    year: 2016
+  - authors:
+      - family-names: Sarkans
+        given-names: Ugis
+      - family-names: Chiu
+        given-names: Wah
+      - family-names: Collinson
+        given-names: Lucy
+      - family-names: Darrow
+        given-names: Michele C.
+      - family-names: Ellenberg
+        given-names: Jan
+      - family-names: Grunwald
+        given-names: David
+      - family-names: Hériché
+        given-names: Jean-Karim
+      - family-names: Iudin
+        given-names: Andrii
+      - family-names: Martins
+        given-names: Gabriel G.
+      - family-names: Meehan
+        given-names: Terry
+      - family-names: Narayan
+        given-names: Kedar
+      - family-names: Patwardhan
+        given-names: Ardan
+      - family-names: Russell
+        given-names: Matthew Robert Geoffrey
+      - family-names: Saibil
+        given-names: Helen R.
+      - family-names: Strambio-De-Castillia
+        given-names: Caterina
+      - family-names: Swedlow
+        given-names: Jason R.
+      - family-names: Tischer
+        given-names: Christian
+      - family-names: Uhlmann
+        given-names: Virginie
+      - family-names: Verkade
+        given-names: Paul
+      - family-names: Barlow
+        given-names: Mary
+      - family-names: Bayraktar
+        given-names: Omer
+      - family-names: Birney
+        given-names: Ewan
+      - family-names: Catavitello
+        given-names: Cesare
+      - family-names: Cawthorne
+        given-names: Christopher
+      - family-names: Wagner-Conrad
+        given-names: Stephan
+      - family-names: Duke
+        given-names: Elizabeth
+      - family-names: Paul-Gilloteaux
+        given-names: Perrine
+      - family-names: Gustin
+        given-names: Emmanuel
+      - family-names: Harkiolaki
+        given-names: Maria
+      - family-names: Kankaanpää
+        given-names: Pasi
+      - family-names: Lemberger
+        given-names: Thomas
+      - family-names: McEntyre
+        given-names: Jo
+      - family-names: Moore
+        given-names: Josh
+      - family-names: Nicholls
+        given-names: Andrew W.
+      - family-names: Onami
+        given-names: Shuichi
+      - family-names: Parkinson
+        given-names: Helen
+      - family-names: Parsons
+        given-names: Maddy
+      - family-names: Romanchikova
+        given-names: Marina
+      - family-names: Sofroniew
+        given-names: Nicholas
+      - family-names: Swoger
+        given-names: Jim
+      - family-names: Utz
+        given-names: Nadine
+      - family-names: Voortman
+        given-names: Lenard M.
+      - family-names: Wong
+        given-names: Frances
+      - family-names: Zhang
+        given-names: Peijun
+      - family-names: Kleywegt
+        given-names: Gerard J.
+      - family-names: Brazma
+        given-names: Alvis
+    date-published: "2021-05-21"
+    doi: 10.1038/s41592
+    end: 1422
+    issue: 12
+    journal: Nature Methods
+    scope: "Used for the 'REMBI - Mapping' part. Templates from CAi were based on this publication as well as filling one of these templates on site and conceptual discussions on mapping touched the publication's content."
+    start: 1418
+    title: "REMBI: Recommended Metadata for Biological Images-enabling reuse of microscopy data in biology"
+    type: article
+    url: "https://doi.org/10.1038/s41592-021-01166-8"
+    volume: 18
+    year: 2021
+  - authors:
+      - affiliation: Computational Systems Biology, University of Kaiserslautern-Landau, Kaiserslautern, Germany
+        alias: HLWeil
+        city: Kaiserslautern 
+        country: DE
+        family-names: Weil
+        given-names: H. Lukas
+        orcid: "https://orcid.org/0000-0003-1945-6342"
+      - name: "ARC Commander contributors"
+    license: MIT
+    repository: "https://github.com/nfdi4plants/arcCommander"
+    scope: "Used for creating ARCs by the OMERO-ARC export plugin and exemplary ARCs created prior to this and subsequent OMERO-ARC interoperability work."
+    title: ARC Commander (GitHub repository)
+    type: software
+    version: v0.5.0
+    year: 2023
