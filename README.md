@@ -3,9 +3,19 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+🚧 Under construction. 🚧
+
+**This repository is still growing.**  
+For some preparatory work for this topic from another hackathon, please see [**this repository**](https://github.com/NFDI4BIOIMAGE/Cologne-Hackathon-2023) or the **respective publication** at [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10609770).  
+
+<br/>
+
+---
+---
+
 Repository for documentation during the **[2nd de.NBI BioHackathon Germany](https://www.denbi.de/de-nbi-events/1547-biohackathon-germany-2)** - 11.-15.12.2023 - **[OMERO-ARC project](https://www.denbi.de/de-nbi-events/1614-towards-omero-and-arc-interoperability-for-rdm-compliant-bio-image-data)** (in short: **BHG2023-OMERO-ARC**)  
 
-🚧 Under construction. 🚧
+
 
 ## Code of Conduct
 Please also adhere here to the [ELIXIR Germany Code of Conduct](https://www.denbi.de/code-of-conduct). 
